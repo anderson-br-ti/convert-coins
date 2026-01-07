@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - DevClub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="shaking-hands">
+        <img src="img/shaking-hands.png" alt="people shaking hands">
+    </div>
+    <div class="conversor">
+        <p class="initial-texts">Converter de:</p>
+        <select>
+            <option value="">R$ [Real Brasileiro]</option>
+        </select>
+        <p class="initial-texts">Converter para:</p>
+        <select class="currency-to-convert">
+            <option value="dollar">US$ [Dólar americano]</option>
+            <option value="euro">€ [Euro]</option>
+        </select>
+        <p class="initial-texts">Valor:</p>
+        <input type="number" class="initial-value">
+        <button onclick="convert()" class="conv-button">Converter!</button>
+        <div class="final-result">
+            <div class="currency-box">
+                <img class="brazil-flag" src="img/bra-flag.png" alt="initial-coin">
+                <p class="inside-result">Real</p>
+                <p class="input-value inside-result">R$ 0,00</p>
+            </div>
+            <img class="arrow-img" src="img/arrow.png" alt="down-arrow">
+            <div class="currency-box">
+                <img class="coin-flag" src="img/usa-flag.png" alt="final-coin">
+                <p class="inside-result final-coin">Dólar</p>
+                <p class="final-value inside-result">US$ 0,00</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="treinando.js"></script>
+
+</html>
